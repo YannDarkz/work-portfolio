@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+:root {
+  font-family: "Handjet", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  // font-weight: 900;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  // color: rgba(60, 57, 57, 0.87);
+  // color: rgba(238, 231, 231, 0.87);
+  font-size: 62.5%;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgb(245, 71, 71), 0 0 7px rgb(236, 214, 214), 0 2px 5px rgb(143, 123, 123);
+}
+
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: inherit;
+  transition: 0.4s ease-in-out;
+  text-shadow: none;
+
+  &:hover {
+    color: #81bad4;
+  }
+
+}
+
+button {
+  font-weight: 500;
+  color: #fff;
+  background-color: transparent;
+  border: transparent;
+  transition: 0.4s ease-in-out;
+
+  &:hover {
+    color: #81bad4;
+    cursor: pointer;
+  }
+}
+
+
+body {
+
+  min-height: 150vh;
+  padding: 0 5vw;
+  position: relative;
+  background: url(./images/fundo-universo612x612.jpg);
+}
+
+li {
+  list-style: none;
+}
+
+// p {
+//   text-shadow: 1px 1px 2px rgb(245, 71, 71), 0 0 7px rgb(236, 214, 214), 0 2px 5px rgb(143, 123, 123);
+// }

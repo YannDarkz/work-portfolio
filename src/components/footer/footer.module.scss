@@ -1,0 +1,43 @@
+.container_footer {
+    // background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    height: 100px;
+
+    h2 {
+        color: #fff;
+    }
+
+    nav {
+
+        ul {
+            font-size: 2rem;
+            display: flex;
+            gap: 5vw;
+
+            li {
+                .linkedin {
+
+                    &:hover {
+                        color: rgb(10, 102, 194);
+                    }
+                }
+
+                .wpp {
+                    &:hover {
+                        color: rgb(37, 211, 102);
+                    }
+                }
+                .email {
+                    &:hover {
+                        color: rgb(234, 67, 53);
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,90 @@
+.skill_container {
+
+    margin-bottom: 5vh;
+    h2 {
+        text-align: center;
+        margin: 2vh 0 5vh 0;
+        font-size: 2rem;
+        font-size: 3rem;
+    }
+
+    .skill_list {
+        display: flex;
+        justify-content: center;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        gap: 7vh;
+        
+
+        .skill_item {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            & > :first-child {
+                font-size: 8rem;
+            }
+
+            @media (min-width: 1120px) {
+                width: 20%;
+
+            }
+
+        }
+
+        .title {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: .5vh;
+
+            & + p {
+                font-size: 1.6rem;
+
+            }
+        }
+
+        .html {
+            color: #E34F26;
+        }
+
+        .css {
+            color: #1572B6;
+        }
+
+        .js {
+            color: #F7DF1E;
+        }
+
+        .react {
+            color: #18748e;
+        }
+
+        .github {
+            color: #181717;
+        }
+
+        .git {
+            color: #F05033;
+        }
+
+        .angular {
+            color: #DD0031;
+            
+        }
+
+        .node {
+            color: #339933;
+            
+        }
+
+        .ts {
+            color: #3178C6;
+        }
+    }
+
+}

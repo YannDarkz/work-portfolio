@@ -1,0 +1,85 @@
+.about_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+
+    h2 {
+        font-size: 4rem;
+        letter-spacing: 1px;
+        margin: 1vh 0 1vh 0;
+    }
+
+    h6 {
+        font-size: 1.9rem;
+    }
+
+    .coment {
+        font-size: 1.6rem;
+        padding: 0 9vw;
+        margin-bottom: 2vh;
+    }
+
+    button {
+        
+        // color: black;
+        color: rgba(131, 126, 126, 0.87);
+        border-radius: 1rem;
+        padding: 8px 10px;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 2vh 0 3vh 0;
+        
+        position: relative;
+        display: flex;
+        justify-content: center;
+        transition: 2s ease-in-out;
+        
+        &:hover {
+            box-shadow: 0px 0px 80px rgba(87, 84, 84, 0.9);
+            background-color: black;
+            color: #fff;
+        }
+
+        svg {
+            height: 100%;
+            left: 0;
+            top: 0; 
+            position: absolute;
+            width: 100%; 
+
+        }
+
+        rect {      
+            fill: none;
+            stroke: rgb(252, 254, 255);
+            stroke-width: 2;
+            stroke-dasharray: 550, 240;
+            transition: all 1s linear;
+        }
+
+        &:hover rect {
+            stroke-width: 5;
+            stroke-dasharray: 50, 260;
+            stroke-dashoffset: 690;
+            stroke: #ad8982;
+            transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+        }
+        
+    }
+
+    @media (min-width: 1080px) {
+        
+        h2 {
+            font-size: 3.7rem;
+        }
+    
+        h6, .coment {
+            font-size: 2.2rem;
+        }
+    
+
+    }
+
+}

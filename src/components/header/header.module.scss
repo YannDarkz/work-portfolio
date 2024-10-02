@@ -1,0 +1,126 @@
+.header_container {
+    display: flex;
+    padding-top: 2vh;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .logo {
+        width: 40px;
+        will-change: filter;
+        transition: filter 500ms;
+
+        &:hover {
+
+            filter: drop-shadow(0 0 .2em #ffbb33);
+        }
+    }
+
+    .list_container {
+        display: flex;
+        gap: 2vw;
+        font-size: 1.2rem;
+
+        li {
+
+            a {
+                position: relative;
+                padding-bottom: 2px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    width: 0;
+                    background-color: #81bad4;
+                    transition: width 0.3s ease-in-out;
+                }
+               
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 400px) {
+        .list_container {
+            gap: 3vw;
+            font-size: 1.5rem;
+
+        }
+    }
+
+    @media (min-width: 620px) {
+        .list_container {
+            gap: 3vw;
+            font-size: 1.5rem;
+
+        }
+    }
+
+    @media (min-width: 768px) {
+        .list_container {
+            gap: 4vw;
+            font-size: 1.8rem;
+
+        }
+    }
+
+    @media (min-width: 920px) {
+        .logo {      
+            width: 60px;
+        }
+
+        .list_container {
+            gap: 5vw;
+            font-size: 2rem;
+
+        }
+    }
+
+    @media (min-width: 1080px) {
+         padding-top: 4vh;
+        // .logo {      
+        //     width: 8vw;
+        // }
+
+        .list_container {
+            font-size: 2.3rem;
+
+        }
+    }
+
+    @media (min-width: 1280px) {
+
+        .list_container {
+            font-size: 2.5rem;
+
+        }
+    }
+
+    @media (min-width: 1440px) {
+       
+
+        .list_container {
+            font-size: 2.7rem;
+
+        }
+    }
+
+    @media (min-width: 2000px) {
+        margin-top: 7vh;
+       
+        .list_container {
+            font-size: 2.3vw;
+
+        }
+    }
+
+
+
+}

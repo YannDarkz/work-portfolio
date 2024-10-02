@@ -1,0 +1,44 @@
+.toggle_switch {
+  margin: 0 auto;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+
+  .toggle_circle {
+    width: 10px;
+    height: 4px;
+    background-color: #58585a;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.5px;
+    left: 2px;
+    transition: transform 0.3s ease-in-out;
+
+    &.dark {
+      transform: translateX(15px);
+      background-color: #69f7f7;
+    }
+  }
+
+  @media (min-width:900px) {
+    width: 40px;
+    height: 20px;
+
+
+    .toggle_circle {
+      width: 16px;
+      height: 16px;
+
+      &.dark {
+        transform: translateX(20px);
+        background-color: #69f7f7;
+      }
+    }
+
+  }
+}
