@@ -3,7 +3,7 @@ import styles from './about.module.scss'
 
 const About = () => {
 
-    const caminhoCurriculo = '/yannCurriculo.pdf'
+    const caminhoCurriculo = '/YannCurriculo.pdf'
 
     const handleLink = () => {
 
@@ -11,7 +11,7 @@ const About = () => {
         setTimeout(() => {
 
             window.open(caminhoCurriculo, '_blank')
-        },2000)
+        },1000)
     
     }
 
