@@ -3,7 +3,7 @@ import styles from './about.module.scss'
 
 const About = () => {
 
-    const caminhoCurriculo = './YannCurriculo.pdf'
+    const caminhoCurriculo = 'https://drive.google.com/file/d/1KUY-fvfMaEdz-ejaFBGqjfX9L_ylbfZV/view'
 
     const handleLink = () => {
 
