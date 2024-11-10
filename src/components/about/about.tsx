@@ -3,7 +3,7 @@ import styles from './about.module.scss'
 
 const About = () => {
 
-    const caminhoCurriculo = '/YannCurriculo.pdf'
+    const caminhoCurriculo = './YannCurriculo.pdf'
 
     const handleLink = () => {
 
